@@ -17,7 +17,7 @@ const Modal = ({ showModal, setShowModal }) => {
             <div className={styles.modalContent} onClick={modalContentClick}>
                 <h1>CRUD Application Showcase</h1>
                 <p>Welcome to this showcase of a dynamic CRUD (Create, Read, Update, Delete) application, created using the Express.js, Mongoose, Node.js, and Bootstrap. 
-                <br/><br/>This application seamlessly interfaces with a MongoDB Atlas cloud database, demonstrating the capabilities of managing data in real-time. To ensure the integrity and security of the database, I've opted for a video demonstration that illustrates the functionality and user experience of the application, rather than direct public interaction. <br/><br/>Please watch the demonstration to explore how the application performs data management with intuitive design and robust backend infrastructure.</p>
+                <br/><br/>This application seamlessly interfaces with a MongoDB Atlas cloud database, demonstrating the capabilities of managing data in real-time. To ensure the integrity and security of the database, I've opted for a video demonstration that illustrates the functionality and user experience of the application, rather than direct public interaction. <br/><br/>Please watch the demonstration to understand how the application performs data management with intuitive design and robust backend infrastructure.</p>
                 <button onClick={closeModal} className={styles.closeButton}>Close</button>
             </div>
         </div>
