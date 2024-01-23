@@ -1,0 +1,62 @@
+/*****************
+Home Styles
+******************/
+
+.containerMain{
+    font-family: 'Techno';
+    position: relative; 
+    display: flex;
+    overflow: hidden;
+    width: 100vw; 
+    height: 100vh; 
+    justify-content: center; 
+    color: #f4ebd9;
+}
+
+.title{
+    z-index: 10;
+    top: 10%;
+    font-size: 42px;
+    color: transparent;
+    text-wrap: wrap;
+    text-align: center;
+    font-weight:bold;
+    position: relative; 
+    background: #f4ebd9;
+    background-clip: text; 
+}
+.backgroundImage{
+    position: absolute;
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.video{
+    position: absolute;
+    z-index: 1; 
+    bottom: 16%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    color: #f4ebd9;
+    filter: invert(100%)
+}
+.github{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 52px;
+    position: absolute;
+    bottom: 3%;
+}
+.link{
+    filter: invert(80%);
+    width: 70px;
+    height: 70px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
