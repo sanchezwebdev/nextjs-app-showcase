@@ -12,8 +12,9 @@ Home Styles
     justify-content: center; 
     color: #f4ebd9;
 }
-
 .title{
+    max-height: 200px;
+    /* border: solid red 1px; */
     z-index: 10;
     top: 10%;
     font-size: 42px;
@@ -25,6 +26,7 @@ Home Styles
     background: #f4ebd9;
     background-clip: text; 
 }
+
 .backgroundImage{
     position: absolute;
     object-fit:cover;
@@ -32,7 +34,6 @@ Home Styles
     height: 100%;
     z-index: -1; 
 }
-
 .video{
     position: absolute;
     z-index: 1; 
@@ -60,3 +61,22 @@ Home Styles
     font-family: 'Courier New', Courier, monospace;
 }
 
+@media(max-width: 650px){
+    .title{
+        top: 2%;
+    }
+}
+@media(max-width: 500px){
+   .title{
+    font-size: 32px;
+   }
+   .github{
+    font-size: 36px;
+    bottom: 7%
+   }
+   .link{
+    width: 40px;
+    height: 40px;
+   }
+
+}

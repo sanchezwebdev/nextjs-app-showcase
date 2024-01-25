@@ -9,6 +9,8 @@ export default function Home({ params }) {
     const backgroundImgUrl = params.cmsUrls[0]
     const videoUrl = params.cmsUrls[1]
     const linkUrl = params.cmsUrls[3]
+    console.log("videourl",videoUrl)
+    
 
     const [showModal, setShowModal] = useState(false);
 
@@ -24,7 +26,7 @@ export default function Home({ params }) {
         <span> Leveraging Mongo-DB Atlas for CRUD Operations </span>
         </div>
       <video width="750" height="500" controls className={styles.video}>
-        <source src="" type="video/mp4" />
+        <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className={styles.github}>CodeBase Link
