@@ -30,7 +30,9 @@ export default function Home({ params }) {
         Your browser does not support the video tag.
       </video>
       <div className={styles.github}>CodeBase Link
-      <img src={linkUrl} alt="link" className={styles.link}/>
+      <a href="https://github.com/NuminousCode/nextjs-app-showcase" target="_blank" className={styles.link}>
+      <img src={linkUrl} alt="link" className={styles.linkIcon}/>
+      </a>
       </div>
       <img src={backgroundImgUrl} alt="image" className={styles.backgroundImage} />
       <Modal showModal={showModal} setShowModal={setShowModal} />

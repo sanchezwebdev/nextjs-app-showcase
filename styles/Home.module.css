@@ -12,9 +12,9 @@ Home Styles
     justify-content: center; 
     color: #f4ebd9;
 }
+
 .title{
-    max-height: 200px;
-    /* border: solid red 1px; */
+    max-height: 250px;
     z-index: 10;
     top: 10%;
     font-size: 42px;
@@ -36,8 +36,7 @@ Home Styles
 }
 .video{
     position: absolute;
-    z-index: 1; 
-    bottom: 16%;
+    bottom: 20%;
 }
 .icon{
     width: 50px;
@@ -54,11 +53,14 @@ Home Styles
     position: absolute;
     bottom: 3%;
 }
-.link{
+.linkIcon{
     filter: invert(80%);
     width: 70px;
     height: 70px;
     font-family: 'Courier New', Courier, monospace;
+}
+.link{
+ text-decoration: none;
 }
 
 @media(max-width: 650px){
