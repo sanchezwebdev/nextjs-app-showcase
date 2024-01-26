@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Modal from "../components/Modal";
 
@@ -21,6 +22,10 @@ export default function Home({ params }) {
 
   return (
     <div className={styles.containerMain}>
+      <Head>
+        <link rel="icon" href="/showcase-round-726-svgrepo-com.svg" type="image/png"/>       
+        <title>CRUD Showcase</title>
+      </Head>
         <div className ={styles.title}> <span> Cloud Data Management: </span>
         <br/><br/>
         <span> Leveraging Mongo-DB Atlas for CRUD Operations </span>
