@@ -21,8 +21,8 @@ This application is a streamlined, single-page web application built with Next.j
 ### Clone the Repository
 
 ```bash
-git clone 
-cd your-repo-name
+git clone https://github.com/NuminousCode/nextjs-app-showcase.git
+cd nextjs-app-showcase
 ```
 Use the package manager [npm](https://www.npmjs.com/) to install dependencies.
 
