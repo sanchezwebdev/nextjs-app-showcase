@@ -6,10 +6,11 @@ Home Styles
     font-family: 'Techno';
     position: relative; 
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
     width: 100vw; 
     height: 100vh; 
-    justify-content: center; 
     color: #f4ebd9;
 }
 
@@ -34,9 +35,13 @@ Home Styles
     height: 100%;
     z-index: -1; 
 }
-.video{
-    position: absolute;
-    bottom: 20%;
+
+.videoWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 .icon{
     width: 50px;
@@ -47,10 +52,11 @@ Home Styles
 .github{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     font-size: 52px;
-    position: absolute;
+    position: relative;
     bottom: 3%;
 }
 .linkIcon{

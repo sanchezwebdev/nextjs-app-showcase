@@ -10,9 +10,9 @@ export default function Home({ params }) {
     const backgroundImgUrl = params.cmsUrls[0]
     const videoUrl = params.cmsUrls[1]
     const linkUrl = params.cmsUrls[3]
-    console.log("videourl",videoUrl)
-    
 
+    const formatedCmsUrl = params ? `${backgroundImgUrl}?fm=webp&w=2000&h=2000`: null;
+    
     const [showModal, setShowModal] = useState(false);
 
     // Show the modal when the component mounts
@@ -27,19 +27,21 @@ export default function Home({ params }) {
         <title>CRUD Showcase</title>
       </Head>
         <div className ={styles.title}> <span> Cloud Data Management: </span>
-        <br/><br/>
-        <span> Leveraging Mongo-DB Atlas for CRUD Operations </span>
+          <br/><br/>
+          <span> Leveraging Mongo-DB Atlas for CRUD Operations </span>
         </div>
+        <div className={styles.videoWrapper}>
       <video width="750" height="500" controls className={styles.video}>
         <source src={videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      </div>
       <div className={styles.github}>CodeBase Link
       <a href="https://github.com/NuminousCode/mongo-crud-app" target="_blank" className={styles.link}>
       <img src={linkUrl} alt="link" className={styles.linkIcon}/>
       </a>
       </div>
-      <img src={backgroundImgUrl} alt="image" className={styles.backgroundImage} />
+      <img src={formatedCmsUrl} alt="image" className={styles.backgroundImage} />
       <Modal showModal={showModal} setShowModal={setShowModal} />
     </div>
   );
