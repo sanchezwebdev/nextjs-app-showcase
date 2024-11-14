@@ -8,12 +8,14 @@ Home Styles
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
     overflow: hidden;
     width: 100vw; 
     height: 100vh; 
+    min-height: 900px;
     color: #f4ebd9;
 }
-
 .title{
     max-height: 250px;
     z-index: 10;
@@ -26,7 +28,9 @@ Home Styles
     position: relative; 
     background: #f4ebd9;
     background-clip: text; 
+    /* border: white solid 1px; */
 }
+
 
 .backgroundImage{
     position: absolute;
@@ -42,6 +46,14 @@ Home Styles
     display: flex;
     justify-content: center;
     position: relative;
+    max-width: 50%;
+    max-height: 40%;
+    min-width: 600px;
+    margin-top: 5%;
+    /* border: white solid 1px; */
+}
+.video{
+    width: 100%;
 }
 .icon{
     width: 50px;
@@ -58,8 +70,10 @@ Home Styles
     font-size: 52px;
     position: relative;
     bottom: 3%;
+    /* border: white solid 1px; */
 }
 .linkIcon{
+    /* border: white solid 1px; */
     filter: invert(80%);
     width: 70px;
     height: 70px;
@@ -73,18 +87,52 @@ Home Styles
     .title{
         top: 2%;
     }
+    .videoWrapper{
+        max-width: none;
+        width: 90%;
+        min-width: 300px;
+        height: 70vh;
+    }
+    .videoWrapper{
+        /* border: white solid 1px; */
+        top: -10%;
+    }
+    .containerMain{
+        /* min-height: 0; */
+        max-height: 100%;
+        /* border: white solid 1px; */
+    }
 }
 @media(max-width: 500px){
    .title{
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 5%;
+    /* border: white solid 1px; */
    }
    .github{
-    font-size: 36px;
-    bottom: 7%
+    bottom: 0;
+    font-size: 28px;
    }
    .link{
     width: 40px;
     height: 40px;
    }
+   .linkIcon{
+    filter: invert(80%);
+    width: auto;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+}
+@media(max-width: 350px){
+   .github{
+    /* bottom: 0; */
+    font-size: 24px;
+    /* border: white solid 1px; */
+    bottom: 0
+   }
+  
 
 }
